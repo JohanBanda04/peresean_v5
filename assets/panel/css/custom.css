@@ -1,0 +1,17 @@
+.widget-stats .stats-icon.stats-icon-lg.stat-lap {
+  font-size: 128px !important;
+  top: 15px !important;
+  color: #fff !important;
+  width: 128px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  text-shadow: 3px 7px rgba(0, 0, 0, 0.25) !important;
+  opacity: 0.15 !important;
+  right: 0 !important;
+}
+
+.panel-body.panel-stat-lap {
+  display: none;
+}
+
+
