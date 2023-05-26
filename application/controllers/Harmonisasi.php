@@ -75,7 +75,7 @@ class Harmonisasi extends CI_Controller {
             $data['judul_web'] 	  = "DOKUMEN HARMONISASI PEMPROV NTB";
 
         } else if($aksi=='pemkot_mataram'){
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkot_mataram");
             } else if($status=='semua'){
@@ -95,7 +95,7 @@ class Harmonisasi extends CI_Controller {
 //            $data['judul_web'] 	= "DOKUMEN HARMONISASI PEMKOT MATARAM";
         } else if($aksi=='pemkot_bima'){
 
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkot_bima");
             } else if($status=='semua'){
@@ -109,7 +109,7 @@ class Harmonisasi extends CI_Controller {
             $data['judul_web'] 	  = "DOKUMEN HARMONISASI PEMKOT BIMA";
 
         } else if($aksi=='pemkab_sumbawa_barat'){
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkab_sumbawa_barat");
             } else if($status=='semua'){
@@ -123,7 +123,7 @@ class Harmonisasi extends CI_Controller {
             $data['judul_web'] 	  = "DOKUMEN HARMONISASI PEMKAB SUMBAWA BARAT";
 
         } else if($aksi=="pemkab_sumbawa"){
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkab_sumbawa");
             } else if($status=='semua'){
@@ -138,7 +138,7 @@ class Harmonisasi extends CI_Controller {
 
 
         } else if($aksi=="pemkab_lombok_utara"){
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkab_lombok_utara");
             } else if($status=='semua'){
@@ -153,7 +153,7 @@ class Harmonisasi extends CI_Controller {
 
 
         } else if($aksi=="pemkab_lombok_timur"){
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkab_lombok_timur");
             } else if($status=='semua'){
@@ -168,7 +168,7 @@ class Harmonisasi extends CI_Controller {
 
 
         } else if($aksi=="pemkab_lombok_tengah"){
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkab_lombok_tengah");
             } else if($status=='semua'){
@@ -183,7 +183,7 @@ class Harmonisasi extends CI_Controller {
 
 
         } else if($aksi=="pemkab_lombok_barat"){
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkab_lombok_barat");
             } else if($status=='semua'){
@@ -200,7 +200,7 @@ class Harmonisasi extends CI_Controller {
 
         } else if($aksi=="pemkab_dompu"){
 
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkab_dompu");
             } else if($status=='semua'){
@@ -215,7 +215,7 @@ class Harmonisasi extends CI_Controller {
 
         } else if($aksi=="pemkab_bima"){
 
-            if ($status=='menunggu' or $status=='proses' or $status=='konfirmasi' or $status=='selesai') {
+            if ($status=='belum_diproses' or $status=='perbaikan' or $status=='draft_sedang_dibuat' or $status=='menunggu_koreksi' or $status=='selesai') {
                 $this->db->where('status',$status);
                 $this->db->where('zona_dokumen',"pemkab_bima");
             } else if($status=='semua'){
